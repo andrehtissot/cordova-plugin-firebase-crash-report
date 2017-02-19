@@ -18,7 +18,7 @@ public class FirebaseCrashReport extends CordovaPlugin {
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     try {
-                        FirebaseCrash.log(args.getString(0));
+                        FirebaseCrash.report(new Exception(args.getString(0)));
                         callbackContext.success(1);
                     } catch (Exception e){
                         FirebaseCrash.log(e.getMessage());
