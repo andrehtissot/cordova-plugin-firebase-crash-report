@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-firebase-crash-report"
+        version="1.0.0">
+
+    <name>Firebase Extended Notification Cordova Plugin</name>
+
+    <description>Simple extended message from server as "data"</description>
+
+    <repo>https://github.com/andrehtissot/cordova-plugin-firebase-crash-report.git</repo>
+
+    <keywords>report, cordova, cordova-android, crash, firebase, android, cordova</keywords>
+
+    <license>MIT</license>
+
+    <author>André Augusto Tissot</author>
+
+    <js-module src="www/FirebaseCrashReport.js" name="FirebaseCrashReport">
+        <clobbers target="FirebaseCrashReport" />
+    </js-module>
+    <!-- cordova -->
+    <engines>
+        <engine name="cordova-android" version=">=4.0.0" />
+    </engines>
+
+    <!-- dependencies -->
+    <dependency id="cordova-plugin-fcm" url="https://github.com/fechanique/cordova-plugin-fcm"
+        commit="03bfc26f3e899b32a1d06c9a56283b025d001995"/>
+
+    <!-- android -->
+    <platform name="android">
+        <framework src="src/android/FirebaseCrashReport.gradle" custom="true"
+            type="gradleReference"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FirebaseCrashReport" >
+                <param name="android-package"
+                    value="com.andretissot.firebasecrashreport.FirebaseCrashReport"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/FirebaseCrashReport.java"
+            target-dir="src/com/andretissot/firebasecrashreport" />
+    </platform>
+</plugin>

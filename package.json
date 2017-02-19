@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-firebase-crash-report",
+  "cordova_name": "Firebase Crash Report Cordova Plugin",
+  "version": "1.0.0",
+  "description": "Simple Firebase crash report plugin for cordova",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrehtissot/cordova-plugin-firebase-crash-report"
+  },
+  "keywords": [
+    "report",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "crash",
+    "firebase",
+    "android",
+    "cordova"
+  ],
+  "platforms": [
+    "android"
+  ],
+  "engines": [],
+  "dependencies": {
+    "cordova-plugin-fcm": "fechanique/cordova-plugin-fcm#03bfc26f3e899b32a1d06c9a56283b025d001995"
+  },
+  "author": "André Augusto Tissot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrehtissot/cordova-plugin-firebase-crash-report/issues"
+  },
+  "homepage": "https://github.com/andrehtissot/cordova-plugin-firebase-crash-report/blob/master/README.md"
+}
