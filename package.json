@@ -22,7 +22,7 @@
   ],
   "engines": [],
   "dependencies": {
-    "cordova-plugin-fcm": "fechanique/cordova-plugin-fcm#03bfc26f3e899b32a1d06c9a56283b025d001995"
+    "cordova-plugin-fcm": "andrehtissot/cordova-plugin-fcm"
   },
   "author": "André Augusto Tissot",
   "license": "MIT",
