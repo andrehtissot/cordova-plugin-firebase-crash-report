@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-firebase-crash-report",
   "cordova_name": "Firebase Crash Report Cordova Plugin",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simple Firebase crash report plugin for cordova",
   "repository": {
     "type": "git",
